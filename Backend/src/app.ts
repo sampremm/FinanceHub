@@ -12,8 +12,10 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
+    "https://project-70v4x-b49ebhf98-sams-projects-893bcb19.vercel.app",
     "https://financehub-frountend.vercel.app"
   ],
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   credentials: true
 }));
 app.use(express.json());
