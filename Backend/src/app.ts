@@ -10,9 +10,8 @@ import { errorHandler, notFound } from "./middleware/error.middleware";
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5000", "http://localhost:5173"], // Allow standard React and Vite ports
-  credentials: true, // Required if you plan to send cookies or authorization headers
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+  origin: ["http://localhost:5173", "https://your-frontend.vercel.app"],
+  credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

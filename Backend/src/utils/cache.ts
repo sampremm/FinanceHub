@@ -1,5 +1,7 @@
 import { redis } from "../config/redis";
 
+
+
 export interface CacheOptions {
   ttl?: number; // Time to live in seconds (default: 5 minutes)
 }
