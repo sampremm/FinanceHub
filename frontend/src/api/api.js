@@ -1,7 +1,5 @@
 import axios from "axios";
 
-import axios from "axios";
-
 const API = axios.create({
   baseURL: "https://financehub-2a2a.onrender.com/api",
 });
