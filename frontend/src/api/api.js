@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-baseURL: import.meta.env.VITE_API_URL,
+  baseURL: "https://financehub-2a2a.onrender.com/api",
 });
 console.log("API URL:", import.meta.env.VITE_API_URL);
 
