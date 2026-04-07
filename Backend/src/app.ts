@@ -13,7 +13,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "https://project-70v4x-b49ebhf98-sams-projects-893bcb19.vercel.app",
-    "https://financehub-frountend.vercel.app"
+    "https://financehub-frountend.vercel.app",
+    "https://project-70v4x.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   credentials: true
