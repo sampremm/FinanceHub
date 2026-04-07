@@ -188,7 +188,7 @@ const _getWeeklyTrendsFromDb = async (weeks = 8, userId?: string) => {
 
 export const getWeeklyTrends = async (weeks = 8, userId?: string) => {
   return withCache(
-    cacheKeys.weeklyTrends(userId),
+    cacheKeys.weeklyTrends(weeks, userId),
     () => _getWeeklyTrendsFromDb(weeks, userId),
     { ttl: 900 } // 15 minutes
   );
@@ -214,7 +214,7 @@ const _getRecentActivityFromDb = async (limit = 10, userId?: string) => {
 
 export const getRecentActivity = async (limit = 10, userId?: string) => {
   return withCache(
-    cacheKeys.recentActivity(userId),
+    cacheKeys.recentActivity(limit, userId),
     () => _getRecentActivityFromDb(limit, userId),
     { ttl: 300 } // 5 minutes
   );

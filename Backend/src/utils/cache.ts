@@ -79,13 +79,13 @@ export const cacheKeys = {
   monthlyTrends: (months: number, userId?: string) =>
     userId
       ? `dashboard:trends:monthly:${months}:${userId}`
-      : `dashboard:trends:monthly:${months}`,
+      : `dashboard:trends:monthly:${months}:global`,
   
-  weeklyTrends: (userId?: string) =>
-    userId ? `dashboard:trends:weekly:${userId}` : "dashboard:trends:weekly",
+  weeklyTrends: (weeks: number, userId?: string) =>
+    userId ? `dashboard:trends:weekly:${weeks}:${userId}` : `dashboard:trends:weekly:${weeks}:global`,
   
-  recentActivity: (userId?: string) =>
-    userId ? `dashboard:recent:${userId}` : "dashboard:recent:global",
+  recentActivity: (limit: number, userId?: string) =>
+    userId ? `dashboard:recent:${limit}:${userId}` : `dashboard:recent:${limit}:global`,
 
   // Records
   recordsList: (filters: any) =>
@@ -106,12 +106,18 @@ export const invalidationPatterns = {
   // When a record is created/updated/deleted
   onRecordChange: async (userId: string) => {
     const patterns = [
-      "dashboard:overview:*",
+      `dashboard:overview:${userId}`,
+      `dashboard:overview:global`,
       "dashboard:user:spending",
-      "dashboard:categories:*",
-      "dashboard:trends:*",
-      "dashboard:recent:*",
-      "records:list:*",
+      `dashboard:categories:${userId}`,
+      `dashboard:categories:global`,
+      `dashboard:trends:monthly:*:${userId}`,
+      `dashboard:trends:monthly:*:global`,
+      `dashboard:trends:weekly:*:${userId}`,
+      `dashboard:trends:weekly:*:global`,
+      `dashboard:recent:*:${userId}`,
+      `dashboard:recent:*:global`,
+      `records:list:*`,
     ];
     for (const pattern of patterns) {
       await deleteCachedByPattern(pattern);
@@ -143,7 +149,7 @@ export const withCache = async <T>(
 ): Promise<T> => {
   // Try to get from cache
   const cached = await getCached<T>(cacheKey);
-  if (cached) {
+  if (cached !== null) {
     return cached;
   }
 
