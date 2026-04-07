@@ -2,7 +2,7 @@
 
 **Zorvyn FinTech Screening Assessment Submission**  
 Submitted by **Sam Prem Kumar Thalla**  
-🔗 **Live Demo:** [https://financehub-frountend.vercel.app](https://financehub-frountend.vercel.app/login)
+🔗 **Live Demo:** [https://financehub-frountend.vercel.app](https://financehub-frountend.vercel.app)
 
 A **robust full-stack financial management platform** built exactly to the specifications of the Finance Data Processing and Access Control Backend assignment. Featuring strict **role-based access control (RBAC)**, real-time analytics, a robust REST API, and a modern UI.
 
