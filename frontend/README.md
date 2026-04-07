@@ -1,8 +1,8 @@
-# FinanceHub Frontend
+# 🎨 FinanceHub Frontend — Dashboard Analytics
 
-## Overview
+**Zorvyn FinTech Screening Assessment (Bonus Front-End Integration)**
 
-FinanceHub is a modern, professional finance dashboard application built with React and Vite. It provides teams with intuitive tools to track expenses, analyze spending patterns, and manage financial operations with role-based access control and comprehensive analytics.
+FinanceHub is a modern, professional finance dashboard application built with React and Vite. It provides teams with intuitive tools to track expenses, analyze spending patterns, and manage financial operations with strict role-based access control and comprehensive analytics mirroring the requested backend architecture.
 
 This frontend integrates seamlessly with the FinanceHub backend API to deliver authentication, role-based navigation, record management, team spending analytics, and admin controls.
 

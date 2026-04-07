@@ -1,10 +1,10 @@
-# 💰 FinanceHub Backend
+# 💰 FinanceHub Backend — Data Processing & Access Control
 
-## 🚀 Overview
+**Zorvyn FinTech Screening Assessment**
 
-FinanceHub is a scalable backend API for a finance dashboard application that enables users to track expenses, analyze financial data, and manage users with role-based access control.
+FinanceHub is a scalable backend API for a finance dashboard application that enables users to track expenses, analyze financial data, and manage users with role-based access control. It was meticulously designed to exceed the requirements of the Finance Data Processing and Access Control Backend assessment.
 
-The system is designed with a modular architecture, strong validation, and production-ready practices.
+The system is built upon a modular architecture, strong inputs validation via Zod, strict user isolation routing, and production-ready enterprise standards.
 
 ---
 
@@ -232,6 +232,7 @@ Includes:
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author / Candidate
 
-Sam Prem Kumar Thalla
+**Sam Prem Kumar Thalla**
+[samprem888111@gmail.com](mailto:samprem888111@gmail.com)

@@ -1,6 +1,9 @@
-# 💰 FinanceHub
+# 💰 FinanceHub — Finance Data Processing & Access Control
 
-A **full-stack SaaS financial management platform** with **role-based access control (RBAC)**, real-time analytics, and a modern UI.
+**Zorvyn FinTech Screening Assessment Submission**  
+Submitted by **Sam Prem Kumar Thalla**
+
+A **robust full-stack financial management platform** built exactly to the specifications of the Finance Data Processing and Access Control Backend assignment. Featuring strict **role-based access control (RBAC)**, real-time analytics, a robust REST API, and a modern UI.
 
 ---
 
@@ -22,6 +25,17 @@ FinanceHub is designed to simulate a **real-world financial tracking system** wh
 * Admins control users and system
 
 👉 Built with clean architecture, proper validation, and scalable design.
+
+## 📋 Zorvyn Assignment Mapping
+
+This project explicitly aligns with all **Core Requirements** and **Optional Enhancements** specified in the assignment:
+- **User and Role Management:** Secure JWT Auth with `VIEWER`, `ANALYST`, and `ADMIN` role distinction.
+- **Financial Records Management:** Express REST API with full CRUD capability, built with PostgreSQL + Prisma. Includes `Amount`, `Type`, `Category`, `Date`, etc.
+- **Dashboard Summary APIs:** Dedicated analytics service (total income/expenses, net balance, category totals, monthly/weekly trends).
+- **Access Control Logic:** Implemented using isolated RBAC middleswares. Viewers are strictly isolated to their own records.
+- **Validation and Error Handling:** Zod configuration with generic AppError handler ensuring strong typing and 4xx/5xx status reporting.
+- **Data Persistence:** Fully relational PostgreSQL instance via Prisma ORM schemas.
+- **Optional Enhancements:** Included Token Auth, Pagination, Secure Soft-Deletes across all schemas, robust caching with Redis, and extensive Jest testing.
 
 ---
 
