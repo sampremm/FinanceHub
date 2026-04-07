@@ -23,7 +23,7 @@ FinanceHub is designed to simulate a **real-world financial tracking system** wh
 
 * Users can manage income & expenses
 * Analysts can analyze financial data
-* Admins control users and system
+* Admins control users and syste 
 
 👉 Built with clean architecture, proper validation, and scalable design.
 
@@ -184,13 +184,15 @@ http://localhost:3000/api
 
 ---
 
-## 🔑 Example Accounts
+## 🔑 Live Demo Accounts
 
-| Role    | Email                                             | Password    |
-| ------- | ------------------------------------------------- | ----------- |
-| VIEWER  | [viewer@example.com](mailto:viewer@example.com)   | password123 |
-| ANALYST | [analyst@example.com](mailto:analyst@example.com) | password123 |
-| ADMIN   | [admin@example.com](mailto:admin@example.com)     | password123 |
+You can test the Role-Based Access Control on the deployed live demo using the following test credentials:
+
+| Role    | Email                  | Password    |
+| ------- | ---------------------- | ----------- |
+| ADMIN   | sam888111@test.com     | thalla88111 |
+| ANALYST | sam@test.com           | thalla88111 |
+| VIEWER  | Create any new account | (Any)       |
 
 ---
 
